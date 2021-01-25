@@ -5,4 +5,4 @@ from .models import Event
 
 def home(request):
     events = Event.objects
-    return render(request, 'events/home.html', {'events': events})
+    return render(request, '../templates/events/home.html', {'events': events})

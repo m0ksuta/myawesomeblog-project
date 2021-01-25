@@ -6,7 +6,7 @@ from .models import Post
 
 def showblog(request):
     post = Post.objects
-    return render(request, 'blog/blog.html', {'post': post})
+    return render(request, '../templates/blog/blog.html', {'post': post})
 
 
 def specific_post(request, post_id):
